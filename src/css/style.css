@@ -1,0 +1,72 @@
+html {
+    font-size: 62.5%;
+}
+
+main {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.slide .box {
+    background-color: #FFFFFF;
+    width: 380px;
+    height: 400px;  
+    top: 115px;
+    left: 120px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.slide .box .content {
+    height: 400px;
+    margin-left: 20px;
+}
+
+.slide .box .content h2 {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.slide .box .content p {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.slide .box .content a {
+    font-size: 21px;
+    color: red;
+}
+
+
+.slide .arrow img {
+    width: 30px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.slide .arrow  {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    height: 100vh;
+}
+
+.slide .arrow.left {
+    margin-left: 30px;
+}
+
+.slide .arrow.right {
+    right: 0;
+    margin-right: 30px;
+}
+
+
