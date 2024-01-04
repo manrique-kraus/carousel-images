@@ -1,72 +1,100 @@
-html {
-    font-size: 62.5%;
-}
-
-main {
-    height: 100vh;
-    overflow: hidden;
-}
-
-.slide img {
-    width: 100vw;
-    height: 100vh;
+.images-slider {
     position: relative;
-}
-
-.slide .box {
-    background-color: #FFFFFF;
-    width: 380px;
-    height: 400px;  
-    top: 115px;
-    left: 120px;
-    border-radius: 10px;
-    position: absolute;
-}
-
-.slide .box .content {
-    height: 400px;
-    margin-left: 20px;
-}
-
-.slide .box .content h2 {
-    font-size: 30px;
-    margin-top: 20px;
-}
-
-.slide .box .content p {
-    font-size: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-right: 20px;
-}
-
-.slide .box .content a {
-    font-size: 21px;
-    color: red;
-}
-
-
-.slide .arrow img {
-    width: 30px;
-    height: 50px;
-    cursor: pointer;
-}
-
-.slide .arrow  {
-    position: absolute;
+    height: 100vh;
     display: flex;
     align-items: center;
-    top: 0;
+}
+
+.images-slider .slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
     height: 100vh;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    position: absolute;
 }
 
-.slide .arrow.left {
-    margin-left: 30px;
+.images-slider .slide.show {
+    opacity: 1;
 }
 
-.slide .arrow.right {
-    right: 0;
-    margin-right: 30px;
+.slide-pink {
+    background-image: url(../images/flowers-pink.png);
 }
 
+.slide-green {
+    background-image: url(../images/flowers-yellow.png);
+}
 
+.slide-orange {
+    background-image: url(../images/sunset.png);
+}
+
+.slide-blue {
+    background-image: url(../images/mountains.png);
+}
+
+.arrow-back,
+.arrow-go {
+    position: absolute;
+    z-index: 1;
+}
+
+.arrow-back {
+    left: 4%;
+}
+
+.arrow-go {
+    right: 4%;
+    transform: rotateY(180deg);
+}
+
+.opacity {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.content {
+    background-color: #FFF;
+    width: 620px;
+    margin-left: 180px;
+    padding: 65px 60px;
+    border-radius: 1rem;
+}
+
+.content .title {
+    margin-bottom: 80px;
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.content .text {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+.content .button {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.button.pinkk {
+    color: #C50000;
+}
+
+.button.greenn {
+    color: #D9DD10;
+}
+
+.button.orangee{
+    color: #A63A17;
+}
+
+.button.bluee {
+    color: #10ACDD;
+}

@@ -1,38 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Carousel Images</title>
 </head>
+
 <body>
+    <div class="images-slider">
+        <a href="#" id="arrow-back" class="arrow-back opacity">
+            <img class="image-arrow" src="./src/images/arrow.png" alt="Seta voltar">
+        </a>
 
-    <main>
-        <div class="slide flowers-pink">
-            <img src="./src/images/flowers-pink.png" alt="Flores cor de rosa">
-            <div class="box">
-                <div class="content">
-                    <h2>Titulo imagem 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatum iste et hic, ea cumque id voluptatibus eos! Numquam saepe eveniet exercitationem sapiente quae optio deserunt accusamus, aspernatur incidunt! Repellat? Numquam saepe eveniet exercitationem sapiente quae optio deserunt accusamus, aspernatur incidunt! Repellat?</p>
-                    <a href="#">Saiba mais</a>
-                </div>
+        <div class="slide slide-pink show">
+            <div class="content">
+                <h2 class="title">Imagem 1</h2>
+                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A voluptates excepturi nostrum
+                    vero voluptatum tenetur hic harum quasi voluptas sequi, fuga ipsam ad ullam recusandae excepturi
+                    nostrum vero voluptatum atque officiis odit reprehenderit tenetur hic harum quasi voluptas eligendi.
+                </p>
+
+                <a class="button pinkk" href="#">Saiba mais</a>
             </div>
-
-            <div class="arrow left">
-                <img class="btn-letf" src="./src/images/arrow-left.png" alt="Seta esquerda">
-            </div> 
-
-            <div class="arrow right">
-                <img class="btn-right" src="./src/images/arrow-right.png" alt="Seta direita">
-            </div> 
         </div>
-    </main>
 
+        <div class="slide slide-green">
+            <div class="content">
+                <h2 class="title">Imagem 2</h2>
+                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A voluptates excepturi nostrum
+                    vero voluptatum tenetur hic harum quasi voluptas sequi, fuga ipsam ad ullam recusandae excepturi
+                    nostrum vero voluptatum atque officiis odit reprehenderit tenetur hic harum quasi voluptas eligendi.
+                </p>
 
+                <a class="button greenn" href="#">Saiba mais</a>
+            </div>
+        </div>
 
-    
-<script src="index.js"></script>
+        <div class="slide slide-orange">
+            <div class="content">
+                <h2 class="title">Imagem 3</h2>
+                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A voluptates excepturi nostrum
+                    vero voluptatum tenetur hic harum quasi voluptas sequi, fuga ipsam ad ullam recusandae excepturi
+                    nostrum vero voluptatum atque officiis odit reprehenderit tenetur hic harum quasi voluptas eligendi.
+                </p>
+
+                <a class="button orangee" href="#">Saiba mais</a>
+            </div>
+        </div>
+
+        <div class="slide slide-blue">
+            <div class="content">
+                <h2 class="title">Imagem 4</h2>
+                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A voluptates excepturi nostrum
+                    vero voluptatum tenetur hic harum quasi voluptas sequi, fuga ipsam ad ullam recusandae excepturi
+                    nostrum vero voluptatum atque officiis odit reprehenderit tenetur hic harum quasi voluptas eligendi.
+                </p>
+
+                <a class="button bluee" href="#">Saiba mais</a>
+            </div>
+        </div>
+
+        <a href="#" id="arrow-go" class="arrow-go">
+            <img class="image-arrow" src="./src/images/arrow.png" alt="Seta avançar">
+        </a>
+    </div>
+
+    <script src="./src/index.js"></script>
 </body>
+
 </html>
